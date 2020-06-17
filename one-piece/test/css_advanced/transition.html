@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .change-width {
+        width: 200px;
+        height: 100px;
+        background-color: red;
+        transition: width 2s, height 2s;
+        transition-timing-function: ease-in;
+      }
+
+      .change-width:hover {
+        width: 300px;
+        height: 150px;
+      }
+      .change-me {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: transform 2s, height 2s, width 2s;
+      }
+      .change-me:hover {
+        width: 200px;
+        height: 200px;
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="change-width">Change my width on hover</div>
+    <div class="change-me">Change Me</div>
+  </body>
+</html>

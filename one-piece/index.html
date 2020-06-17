@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Piece</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body onload="loadhtml()">
+    <!-- Navigation -->
+    <div id="navigation"></div>
+    <!-- Image Slider -->
+    <div id="imageSlider"></div>
+    <!-- Jumbotron -->
+    <div id="jumbotron"></div>
+    <!-- Welcome Section -->
+    <div id="welcome"></div>
+    <!-- Three Column Section -->
+    <div id="threeColumn"></div>
+    <!-- Two Column Section -->
+    <div id="twoColumn"></div>
+    <!-- Fixed Background -->
+    <div id="fixedBackground"></div>
+    <!-- Emoji Section -->
+    <div id="emoji"></div>
+    <!-- Meet the Team  Section -->
+    <div id="team"></div>
+    <!-- Cards -->
+    <div id="cards"></div>
+    <!-- Two Column Section -->
+    <div id="two-column-low"></div>
+    <!-- Connect -->
+    <div id="connect"></div>
+    <!-- Threee Column Footer Section -->
+    <div id="footer"></div>
+  </body>
+</html>
+<script>
+  function loadhtml() {
+    $("#navigation").load("./partial/navigation.html");
+    $("#imageSlider").load("./partial/image-slider.html");
+    $("#jumbotron").load("./partial/jumbotron.html");
+    $("#welcome").load("./partial/welcome.html");
+    $("#threeColumn").load("./partial/three-col.html");
+    $("#twoColumn").load("./partial/two-col.html");
+    $("#fixedBackground").load("./partial/fixed-background.html");
+    $("#emoji").load("./partial/emoji.html");
+    $("#team").load("./partial/team.html");
+    $("#cards").load("./partial/cards.html");
+    $("#two-column-low").load("./partial/two-column-low.html");
+    $("#connect").load("./partial/connect.html");
+    $("#footer").load("./partial/footer.html");
+  }
+</script>

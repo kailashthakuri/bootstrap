@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-boxs;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1px 10px;
+      }
+      img {
+        width: 100%;
+        vertical-align: center  ;
+      }
+      .column {
+        max-width: 25%;
+        flex-grow: 25%;
+        margin-top: 3px;
+      }
+      .header {
+        text-align: center;
+        padding: 30px;
+      }
+      @media (max-width: 900px) {
+        .column {
+          max-width: 50%;
+          flex-grow: 50%;
+        }
+      }
+      @media (max-width: 700px) {
+        .column {
+          max-width: 100%;
+          flex-grow: 100%;
+        }
+      }
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header"><h1>One Piece World</h1></div>
+    <div class="row">
+      <div class="column"><img src="../../img/84631.jpg" /></div>
+      <div class="column"><img src="../../img/262716.jpg" /></div>
+      <div class="column"><img src="../../img/578022.png" /></div>
+      <div class="column"><img src="../../img/905276.jpg" /></div>
+      <div class="column"><img src="../../img/932961.jpg" /></div>
+      <div class="column"><img src="../../img/772936.png" /></div>
+      <div class="column"><img src="../../img/164946.jpg" /></div>
+    </div>
+    <div class="row">
+      <div class="column"><img src="../../img/122964.jpg" /></div>
+      <div class="column"><img src="../../img/123037.jpg" /></div>
+      <div class="column"><img src="../../img/164946.jpg" /></div>
+      <div class="column"><img src="../../img/262716.jpg" /></div>
+      <div class="column"><img src="../../img/402897.jpg" /></div>
+      <div class="column"><img src="../../img/47374.png" /></div>
+      <div class="column"><img src="../../img/505303.jpg" /></div>
+    </div>
+    <div class="row">
+      <div class="column"><img src="../../img/578022.png" /></div>
+      <div class="column"><img src="../../img/606265.jpg" /></div>
+      <div class="column"><img src="../../img/606266.jpg" /></div>
+      <div class="column"><img src="../../img/606271.jpg" /></div>
+      <div class="column"><img src="../../img/606273.jpg" /></div>
+      <div class="column"><img src="../../img/606274.jpg" /></div>
+      <div class="column"><img src="../../img/606275.jpg" /></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .hide-this {
+        background-color: yellow;
+        padding: 10px;
+      }
+      @media screen and (max-width: 600px) {
+        .hide-this {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 700px) {
+        .hide-this {
+          font-size: 40px;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        .hide-this {
+          font-size: 30px;
+        }
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hide-this">
+      Hide this Element
+    </div>
+    <p>
+      When the browser's width is 600px wide or less, hide the div element.
+      Resize the browser window to see the effect.
+    </p>
+    <img src="../../img/872837.jpg" />
+  </body>
+</html>

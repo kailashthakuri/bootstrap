@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float</title>
+    <style>
+      img {
+        width: 200px;
+        height: auto;
+        float: right;
+      }
+      .cleared {
+        clear: right;
+      }
+      .clearfix {
+        border: 2px solid blueviolet;
+        overflow: auto;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .box {
+        float: left;
+        width: 33.33%;
+        padding: 20px;
+      }
+      .clearfix-hack::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .flex-container {
+        margin: 2px;
+        display: flex;
+        /* flex-wrap: no; */
+      }
+      .flex-box {
+        text-align: center;
+        margin: 5px;
+        width: 50%;
+        border: 2px red solid;
+      }
+      li {
+        float: left;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+      }
+      li a {
+        color: white;
+        padding: 14px 16px;
+        display: inline-block;
+        text-decoration: none;
+      }
+      li a:hover {
+        background-color: chocolate;
+      }
+      .active {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="clearfix-hack">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <p>
+      Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+      roots in a piece of classical Latin literature from 45 BC, making it over
+      2000 years old. Richard McClintock,
+    </p>
+    <img src="../img/401837.jpg" />
+    There are many variations of passages of Lorem Ipsum available, but the
+    majority have suffered alteration in some form, by injected humour, or
+    randomised words which don't look even slightly believable. If you are going
+    to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+    embarrassing hidden in the middle of text. All the Lorem Ipsum generators on
+    the Internet tend to repeat predefined chunks as necessary, making this the
+    first true generator on the Internet. It uses a dictionary of over 200 Latin
+    words, combined with a handful of model sentence structures, to generate
+    Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore
+    always free from repetition, injected humour, or non-characteristic words
+    etc.
+    <div class="cleared">
+      There are many variations of passages of Lorem Ipsum available, but the
+      majority have suffered alteration.
+    </div>
+    <div class="clearfix">
+      <h2>With ClearFix</h2>
+      <img src="../img/606667.jpg" />
+      There are many variations of passages of Lorem Ipsum available, but the
+      majority have suffered alteration in some form, by injected humour, or
+      randomised words which don't look even slightly believable. If you are
+      going to use a passage of Lorem Ipsum, you need to be sure there isn't
+      anything embarrassing hidden in the middle of text
+    </div>
+    <h3>Grid of Boxes</h3>
+
+    <div class="clearfix-hack">
+      <div class="box" style="background-color: cadetblue;">
+        <p>This is Box 1</p>
+      </div>
+      <div class="box" style="background-color: darkgoldenrod;">
+        <p>This is Box 2</p>
+      </div>
+      <div class="box" style="background-color: darkorange;">
+        <p>This is Box 3</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="flex-box">
+        There are many variations of passages of Lorem Ipsum
+      </div>
+      <div class="flex-box">
+        There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or
+        randomised words which don't look even slightly believable. If you are
+        going to use a passage of Lorem Ipsum, you need to be sure there isn't
+        anything embarrassing hidden in the middle of text
+      </div>
+    </div>
+  </body>
+</html>

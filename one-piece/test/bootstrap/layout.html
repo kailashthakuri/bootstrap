@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      .container,
+      .container-fluid {
+        background-color: aqua;
+      }
+      [class*="col"] {
+        background-color: blue;
+        border: 1px red solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2" style="background-color: red;">
+          Hello World
+        </div>
+        <div class="col col-md-auto" style="background-color: royalblue;">
+          Hello World
+        </div>
+        <div class="col col-lg-2" style="background-color: seagreen;">
+          Hello World
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          Column 1
+        </div>
+        <div class="col-6 col-md-4">
+          Column 2
+        </div>
+      </div>
+    </div>
+    <div class="container" style="height: 100px;">
+      <div class="row" style="height: 100px;">
+        <div class="col align-self-start">
+          Column 1
+        </div>
+        <div class="col align-self-center">
+          Column 1
+        </div>
+        <div class="col align-self-end">
+          Column 1
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-4">Column 1</div>
+        <div class="col-4">Column 2</div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-4">Column 1</div>
+        <div class="col-4">Column 2</div>
+      </div>
+      <div class="row justify-content-end">
+        <div class="col-4">Column 1</div>
+        <div class="col-4">Column 2</div>
+      </div>
+      <div class="row justify-content-end">
+        <div class="col-4">Column 1</div>
+        <div class="col-4">Column 2</div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col col-sm-4">Column</div>
+        <div class="col col-sm-4">Column</div>
+        <div class="w-100 d-none d-md-block"></div>
+        <div class="col col-sm-4">Column</div>
+        <div class="col col-sm-4">Column</div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">First Column</div>
+        <div class="col order-12">Second Column</div>
+        <div class="col order-1">Third Column</div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-4">Column</div>
+        <div class="col-4 offset-4">Column</div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-9">
+          <div class="row">
+            <div class="col-8">Column</div>
+            <div class="col-4">Column</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

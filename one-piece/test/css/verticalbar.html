@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        background-color: #f1f1f1;
+        width: 25%;
+        position: fixed;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      li a {
+        text-decoration: none;
+        display: block;
+        padding: 5px;
+        margin: 2px;
+        font-size: 20px;
+      }
+      .main {
+        height: 1000px;
+        margin-left: 25%;
+        padding: 1px 16px;
+      }
+      li a:hover:not(.active) {
+        background-color: darkorange;
+      }
+      li a.active {
+        background-color: #4caf50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">Blog</a></li>
+    </ul>
+    <div class="main">
+      <h3>This Is Home Page</h3>
+      <p>
+        There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or
+        randomised words which don't look even slightly believable. If you are
+        going to use a passage of Lorem Ipsum, you need to be sure there isn't
+        anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+        generators on the Internet tend to repeat predefined chunks as
+        necessary, making this the first true generator on the Internet. It uses
+        a dictionary of over 200 Latin words, combined with a handful of model
+        sentence structures, to generate Lorem Ipsum which looks reasonable. The
+        generated Lorem Ipsum is therefore always free from repetition, injected
+        humour, or non-characteristic words etc.
+      </p>
+    </div>
+  </body>
+</html>

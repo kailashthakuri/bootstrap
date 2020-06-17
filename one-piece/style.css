@@ -1,0 +1,61 @@
+nav img {
+  height: 50px;
+}
+
+.nav-item {
+  padding-right: 20px;
+  font-weight: bold;
+}
+.carousel-item img {
+  height: 500px;
+}
+.carousel-control-prev-icon {
+  background-color: blue;
+}
+.carousel-control-next-icon {
+  background-color: blue;
+}
+figure {
+  position: relative;
+  width: 100%;
+}
+
+#fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#emojiContent img {
+  height: 200px;
+}
+
+.fun {
+  width: 100%;
+  display: inline-block;
+}
+
+#fixed {
+  background-image: url("img/616943.jpg");
+  position: fixed;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  width: 100%;
+  display: block;
+}
+
+.title {
+  font-family: "cursive";
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+}
+@media (max-width: 796) {
+}
+@media (max-width: 556) {
+}

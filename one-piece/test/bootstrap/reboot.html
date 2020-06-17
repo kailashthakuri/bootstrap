@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /> -->
+    <style>
+      .nav {
+        list-style-type: none;
+        background-color: blue;
+        text-align: center;
+      }
+      .nav li {
+        display: inline-block;
+        padding: 10px;
+        font-size: 25px;
+      }
+      .without-max {
+        margin: auto;
+        max-width: 700px;
+        background-color: burlywood;
+        height: 100px;
+      }
+      .with-max {
+        margin: auto;
+        background-color: cyan;
+        width: 700px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset disabled="disabled" name="test">
+        <legend>User</legend>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" />
+
+        <label for="lName">Last Name</label>
+        <input type="text" id="lName" />
+      </fieldset>
+    </form>
+    <h2>Horizontal Navigation Link</h2>
+    <ul class="nav">
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact Us</a></li>
+    </ul>
+    <div class="without-max">
+      There are many variations of passages of Lorem Ipsum available, but the
+      majority have suffered alteration in some form, by injected humour, or
+      randomised words which don't look even slightly believable.
+    </div>
+    <div class="with-max">
+      There are many variations of passages of Lorem Ipsum available, but the
+      majority have suffered alteration in some form, by injected humour, or
+      randomised words which don't look even slightly believable.
+    </div>
+  </body>
+</html>

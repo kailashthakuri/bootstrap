@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        color: lightblue;
+      }
+      a:visited {
+        color: red;
+      }
+      a.hightlight:hover {
+        font-size: x-large;
+        color: greenyellow;
+      }
+      a:active {
+        color: indigo;
+      }
+      .mouse-over {
+        background-color: green;
+        color: white;
+        text-align: center;
+        padding: 25px;
+      }
+      .mouse-over:hover {
+        background-color: blue;
+      }
+      .tooltip {
+        color: red;
+        padding: 10px;
+      }
+      .tooltip:hover p {
+        display: block;
+      }
+      .tooltip p {
+        display: none;
+        padding: 30px;
+        text-align: center;
+        background-color: greenyellow;
+      }
+      q:lang(no) {
+        quotes: "~""~";
+      }
+      form input:focus {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <b><a href="http://google.com">Google</a></b>
+      <b><a class="hightlight" href="http://facebook.com">Facebook</a></b>
+    </p>
+    <div class="mouse-over">Mouse Over Me</div>
+    <div class="tooltip">
+      Hover me for tooltip
+      <p>Im tool tip</p>
+    </div>
+    <p>Some text <q lang="no">This is quotation</q> Some text</p>
+    <form>
+      First Name: <input type="text" /> <br />
+      Last Name: <input type="text" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
